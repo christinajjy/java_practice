@@ -1,0 +1,35 @@
+abstract class
+
+can not create object for abstract class
+only for derived concrete classes of the abstract class
+
+abstract classes can extend other classes
+
+a class can be declared abstract even if it is fully implemented 
+
+class that extends an abstract class and doesn't implement all the abstract methods must be declared abstract
+
+abstract classes can extend other classes and implement interfaces
+
+the abstract keyword is not aplicable for constructors
+
+static members can not be abstract
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nov 11 jan 27 kkum eso 시험 

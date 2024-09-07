@@ -1,0 +1,63 @@
+early binding - packages
+
+classes in packages must be public
+
+even if class A and class B are supposed to be in the same package,they can not be declared in the same source file
+
+not allowed:
+//AB.java
+package p1;
+public class A{---}
+public class B{---}
+
+allowed:
+//A.java
+package p1;
+public class A{---}
+//B.java
+package p1;
+public class B{---}
+
+it is advisable to have single class in a source file
+
+package statement first, then import statement
+
+only one package statement, any number of import statement
+
+javac <classname>.java -d .
+
+package p1.p2;
+p2 is subpackage of p1
+
+import p1.*;
+    doesn't import class files inside p2
+
+no access specifier -default
+    no keyword
+    acts as public when control is in its package
+    outside acts as private
+
+we can not access private members of the superclass with subclass objects
+
+protected  will behave as public with respected to subclass objects even outseide the packages
+
+constructors can be given access specifiers
+default constructor given by compiler has public access specifier
+
+an outer class can not be private protected or static, an inner class can be all these things
+
+a constructor can not be static
+
+the constructor of the class should be private if the user wants its object creation to mpt be possible outside the class
+example- System class - its constructor is private
+a function should be public static that returns the object of the class 
+called FACTORY METHODS
+they are used to access non static members of a class whose constructor is private
+
+local variables do not have access specifiers, they aren't even default since their scope is limited to the method or function in which they are present
+local var can not be static
+
+
+
+
+

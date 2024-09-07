@@ -1,0 +1,38 @@
+execptions
+
+obj created by jvm that rep logical errors
+    syntax errors, improper environment--compilation errors
+logical-jvm can't detect
+
+Exception class
+    classes under this
+    obj of these are created by jvm when logical error is encountered
+    if this obj is not handled, returns to jvm(has functions to enable this) and the program ends
+    if handled program doesn't terminate
+    obj can be assigned to corresponding exception class ref
+
+once exception is encountered rest of try block won't be executed
+
+simple logical errors- div by 0- Exception class
+serious logical errors- creation of obj when ram is full-Error class
+
+Object class
+    Throwable class
+        Exception class
+        Error class
+
+try block can only transfer obj of Throwable class and its subclasses
+catch can only recieve obj of Throwable class and its subclasses
+
+serious errors are supposed to be handled by jvm internally
+handling serious errors will prevent them from reaching jvm,which means we are neglecting serious logical errors-- dangerous
+never use Throwable referenced obj in catch-- i.e handling both Error and Exception objects
+only use Exception referenced and its subclass referenced objects
+
+compiler compells us to handle-checked exception(IOException,ClassNotFoundException) - else- unchecked Exception(ArithmeticException etc)
+
+subclass of RuntimeException --unchecked exception
+not a subclass of RE- checked
+
+throws is a keyword used to inform the end user that a particular function is proven to transfer exception class obj to its calling place
+

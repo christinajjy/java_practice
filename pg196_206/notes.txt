@@ -1,0 +1,38 @@
+inner class
+
+non static member inner class should not have static members
+
+objects of inner class can be created from its outer class as well as from some other class which is outside the outer class
+
+private inner class--object creatable only in outer class
+
+inner class can extend any class available to outer class
+
+redundant for inner class to extend outer class
+
+static inner class---
+    any access specifier
+    can have static as well as non static members
+    static member- directly available to non static/static members
+    non static not available to static members
+    non static members are static cuz in static domain
+    can not access non static members of outer class
+
+doubt pg 200 program is giving error -- Test.java
+
+local inner class -- inside a function
+    local var of the function are not accessible(not true tho according to compilation,got error only for not initialising it)(pg 202)
+    is equivalent to a local var hence all rules apply - no access specifiers
+    local constants are accessible-- final
+    can not create boj of local inner class inside main of outer class, only inside the function it is defined in
+
+Anon inner class    
+    defined without a name
+    need an interface or abstract class
+    two types:
+        local Anon
+        member Anon
+    class Test1.java(pg 203)
+    class Test2.java(pg 204)
+    class Test3.java(pg 205)
+      

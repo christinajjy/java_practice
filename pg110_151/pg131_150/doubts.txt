@@ -1,0 +1,3 @@
+pg 131- what exactly is sub object
+don't know how i and ii are different and tracing of the program C2.java is not consistent with the explanation - unless my understanding of subobject is wrong
+i in obj A is not changing

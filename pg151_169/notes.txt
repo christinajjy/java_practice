@@ -1,0 +1,12 @@
+all variables in an interface are public static and final
+methods in an interface can not be static
+static constants must be initialised as default initialisation is not provided
+
+interface Xyz
+A implements Xyz
+B extends A 
+=> obj of B can be assigned to interface Xyz reference
+
+interface reference can be typecast into its equivalent reference of a class
+similarly can be typecast into equivalent reference of another interface
+

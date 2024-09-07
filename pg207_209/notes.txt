@@ -1,0 +1,18 @@
+Bdemo
+
+class file executed
+context created
+static members downloaded into context
+static blocks are executed
+main is searched
+new operator is encountered
+creates obj-loads all non static elements of class
+initialises uninitialised var
+searches non static blocks(executes them)
+constructor is loaded
+executed- removed from memory
+(if no obj is created,non static blocks won't be executed)
+
+static blocks are used to give information abt program since it is executed onces context is loaded- ie after class file is loaded
+non static blocks are used to repeat the common code of constructor
+
